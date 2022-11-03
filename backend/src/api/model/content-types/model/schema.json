@@ -4,7 +4,8 @@
   "info": {
     "singularName": "model",
     "pluralName": "models",
-    "displayName": "Model"
+    "displayName": "Model",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,30 +25,22 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
-    },
-    "brochure": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "content": {
       "type": "richtext"
     },
     "price": {
-      "type": "decimal"
+      "type": "decimal",
+      "required": true
     }
   }
 }
